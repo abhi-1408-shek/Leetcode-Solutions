@@ -7,7 +7,6 @@ public:
         int nums1_last_index = nums1_count - 1;
         int nums2_last_index = nums2_count - 1;
         int merge_index = nums1_count + nums2_count - 1;
-
         while (nums1_last_index >= 0 && nums2_last_index >= 0) {
             if (nums1[nums1_last_index] > nums2[nums2_last_index]) {
                 nums1[merge_index] = nums1[nums1_last_index];
@@ -18,7 +17,6 @@ public:
             }
             merge_index--;
         }
-
         while (nums2_last_index >= 0) {
             nums1[merge_index] = nums2[nums2_last_index];
             nums2_last_index--;
