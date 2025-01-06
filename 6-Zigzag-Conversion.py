@@ -2,7 +2,7 @@ class Solution(object):
     def convert(self, s, numRows):
         if numRows == 1 or numRows >= len(s):
             return s
-        
+
         rows = [''] * numRows
         current_row = 0
         going_down = False
