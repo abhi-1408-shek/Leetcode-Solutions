@@ -5,7 +5,6 @@ class Solution(object):
                 left -= 1
                 right += 1
             return left + 1, right
-
         start, end = 0, 0
         for i in range(len(s)):
             l1, r1 = expand_around_center(i, i)
